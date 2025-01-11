@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/chongeangyou/tfd-nest-boilerplate.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/chongeangyou/tfd-nuxt-tailwind-boilerplate.git
