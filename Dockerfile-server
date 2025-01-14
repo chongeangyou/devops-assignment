@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:16.20.2-alpine
+FROM node:15.14.0
 
 ARG ENV_FILE
 WORKDIR /backend
