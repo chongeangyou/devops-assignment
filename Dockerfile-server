@@ -2,7 +2,7 @@ FROM node:15.14.0-alpine
 
 ARG ENV_FILE
 WORKDIR /backend
-COPY backend/.env ./
+COPY backend/package.json backend/yarn.lock backend/.env ./
 RUN yarn install
 
 COPY backend .
