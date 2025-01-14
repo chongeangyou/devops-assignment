@@ -2,7 +2,7 @@ FROM node:16.20.2-alpine
 
 ARG ENV_FILE
 WORKDIR /backend
-COPY backend/.env ./
+COPY backend/package.json backend/yarn.lock backend/.env ./
 RUN yarn install
 
 COPY backend .
@@ -10,4 +10,4 @@ RUN yarn build
 
 EXPOSE 3000
 
-CMD [ "yarn", "start" ]
+CMD [ "yarn", "start:dev" ]
