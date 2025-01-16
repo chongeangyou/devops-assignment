@@ -13,6 +13,7 @@
 
 FROM node:16.20.2
 
+ARG ENV_FILE
 WORKDIR /backend
 ENV NODE_ENV development
 COPY backend/package.json backend/yarn.lock backend/.env ./
