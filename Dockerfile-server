@@ -11,13 +11,13 @@
 
 # CMD [ "yarn", "start:dev" ]
 
-FROM node:16.20.2-alpine
+FROM node:16.20.2
 
 WORKDIR /backend
 ENV NODE_ENV development
 COPY backend/package.json backend/yarn.lock backend/.env ./
 RUN yarn install
-COPY . .
+COPY backend .
 
 EXPOSE 3000
 
